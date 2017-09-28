@@ -19,6 +19,9 @@ var generalDirector = (function() {
             else {
                 $("#btnAction").html('Update Director');
             }
+
+            validations.initialize();  
+            
         });
     }
 
