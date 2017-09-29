@@ -3,7 +3,7 @@
 var generalDirector = (function() {    
     var app = {
         debugMode: true,   
-        movieApi: 'http://localhost/joint/end-to-end-movies-project/back/api/api.php',
+        movieApi: 'http://localhost/joint/movies-test/back/api/api.php',
         }
 
     //load input fields from template        

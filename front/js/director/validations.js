@@ -3,7 +3,7 @@ var validations = (function() {
  
     var app = {
       debugMode: true,   
-      movieApi: 'http://localhost/joint/end-to-end-movies-project/back/api/api.php',
+      movieApi: 'http://localhost/joint/movies-test/back/api/api.php',
       }
 
       function initialize()
@@ -39,10 +39,12 @@ var validations = (function() {
 
             if (valArray[i].val == 'is-empty') {
                 if (InputEmpty(inp.value)) {
-                    $(inp).removeClass('error');//.addClass('success');
+                    $( "#errori" ).append('<label id="directorName-error" class="error" for="directorName">No director name specified</label>');
+                    //$(inp).addClass('error');//.addClass('success');
+                    // <label id="directorName-error" class="error" for="directorName">No director name specified</label>
                 } else {
                     //$(inp).removeClass('success').addClass('error');
-                    $(inp).addClass('error');
+                    $(inp).removeClass('error');
                     return;
                 }
             }
@@ -60,8 +62,8 @@ var validations = (function() {
 
 
     function InputEmpty(input) {
-      return trim(input) == "";
-  }
+      return input.trim() == "";
+}
 
 
 

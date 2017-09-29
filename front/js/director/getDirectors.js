@@ -3,7 +3,7 @@
 var getDirectors = (function() {    
     var app = {
         debugMode: true,   
-        movieApi: 'http://localhost/joint/end-to-end-movies-project/back/api/api.php',
+        movieApi: 'http://localhost/joint/movies-test/back/api/api.php',
         }
 
         function Get_Directors(CallBack_function){
