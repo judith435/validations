@@ -18,7 +18,25 @@
         <div class="container">
             <h2>Create Director</h2> 
             <form id="frmCU">
-                <div id="InputFields" class="extra-padding"></div>
+                <div id="InputFields" class="extra-padding">
+                    <div class="form-group row">
+                        <label for="movieName" class="col-xs-2 col-sm-2 col-md-3 col-lg-3 col-form-label">Director Name</label>
+                        <div class="col-xs-10 col-sm-10 col-md-9 col-lg-9" >
+                            <!-- <input type="text" class="form-control" id="directorName" name="name" placeholder="Enter new Director name" maxlength="50"> -->
+                            <input type="text" class="form-control" id="directorName" name="director_name" placeholder="Enter new Director name" maxlength="50">
+                            <div id="errori"></div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                            <input  type="hidden"  name="ctrl" value="director" >
+                            <button class="btnAdd btn btn-primary" id="btnAction">Create Director</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <input  type="text" name="duplicate_director" class="validation_errors" >
+                    </div>
+                </div>
             </form>
         </div>
         <script src='../../js/director/create.js'></script> 
